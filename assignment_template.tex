@@ -22,6 +22,8 @@
 \usepackage{listings}
 \usepackage{framed}
 \usepackage{tikz}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
 
 %\solutiontrue
 % The lecture title, e.g. "Web Information Retrieval".
@@ -50,17 +52,34 @@
 
 \maketitle
 
+\centering \textbf{Team:} Bravo\\
+\centering \textbf{Members:}\\
+\centering  Gaurav Kumar (220200656)\\
+\centering  Pavithree Shetty (220200661)\\
+\centering  Nisha Sharma (220202359)\\
+
 \section{Frame Check Sequence \hfill{24 points}}
 \subsection{Checksum \hfill{11 points}}
 Calculate the \emph{checksum} of the hexadecimal message \texttt{ab35 c3d1 5231 30ed} using the steps described in Chapters 3.3.2 and 5.2.2 in the textbook \emph{Computer networking: A top-down approach} from Kurose and Ross \footnote{Computer networking: A top-down approach; \emph{James F. Kurose and Keith W. Ross}; 6th Edition; \emph{Pearson Education India}; 2013}. How does the send messages looks like? 
 
 Please write down every calculation step.
 
+\begin{figure}[h!]
+  \includegraphics[width=\linewidth]{resources\\Solution1.jpeg}
+  \caption{CheckSum}
+  \label{fig:checkSum}
+\end{figure}
+
 \subsection{Cyclic Redundancy Check \hfill{13 points}}
 Calculate the \emph{CRC} bits using the \emph{CRC} algorithm, as described in Chapter 5.2.3 in the textbook \emph{Computer networking: A top-down approach} from Kurose and Ross $^1$  for the data \texttt{D= 10001110} and the generator \texttt{g = 1010}. How does the send messages looks like? 
 
 Please write down every calculation step.
 
+\begin{figure}[h!]
+  \includegraphics[width=\linewidth]{resources\\Solution2.jpeg}
+  \caption{Cyclic Redundancy Check}
+  \label{fig:cyclicRedundancyCheck}
+\end{figure}
 
 \section{Python Programming \hfill{25 points}}
 \subsection{Checksum \hfill{15 points} \label{checksum}}
@@ -208,6 +227,14 @@ For the DNS structure shown in Figure \ref{fig:dns} answer the following questio
     \item What is the FQDN for the point \emph{west}.
     \item What is the domain of \emph{google}.
     \item What is the zone of \emph{com}.
+\end{enumerate}
+\subsection{Solution:}
+\begin{enumerate}
+    \item In the given DNS structure root is represented as : \textbf{(.) Root}
+    \item In the given DNS structure the TLD(Top level Domains) are - \textbf{"com" and "de"}
+    \item In the given DNS structure the FQDN(Fully qualified Domain name) for the point \emph{west} is : \textbf{west.uni-koblenz.de}
+    \item In the given DNS structure the domain of \emph{google} is: \textbf{com}
+    \item In the given DNS structure the zone of \emph{com} covers: \textbf{google and yahoo} in it.
 \end{enumerate}
 
 \begin{figure}[h]
