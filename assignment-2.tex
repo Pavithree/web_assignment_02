@@ -174,33 +174,34 @@ For the programming tasks, you can use the following libraries: \textcolor{red}{
 Along with your code, send the print screens of the terminals. 
 
 \section{IPV4 and TCP\hfill{6 points}}
-1a) 0xFF24C630 :  
+\textbf{1a) 0xFF24C630 :}  
 \begin{itemize}
                \item Not a valid IPv4 address.
                \item IPv4 address are divided into following classes and the network id follows a certain range mentioned below: \\ Class A : Range(0-127)\\ Class B : Range(128-191) \\ Class C : Range(192 - 223) \\ Class D : Range(224 - 239) \\ Class E is reserved .
                \item As the above address does not belong to any class it is an invalid IPv4 address.
             \end{itemize}
-1b) 198.33.0.255 :
+\textbf{1b) 198.33.0.255 :}
             \begin{itemize}
 			\item Not a valid IPv4 address as it is the Direct Broadcast address
-            \item The above address belongs to Class c, where Network id is 27 bits and Host id is 8 bits.
-            \item The network id would be 198.33.0.0\\The Broadcast address would be 198.33.0.255 both are not used as computer IP addresses
+            \item The above address belongs to Class C, where Network id is 27 bits and Host id is 8 bits. When Host bits are all filled with one, it represents Broadcast address of this network. 
+            \item For the above IPv4 address,\\the network id would be 198.33.0.0.\\The Broadcast address would be 198.33.0.255.\\
+            Both are not used as computer IP addresses
             \end{itemize}
-1c)48.96.258.27 :
+\textbf{1c)48.96.258.27 :}
             \begin{itemize}
             \item  Not a valid address
             \item IPv4 is a 32-bit address where each octet is 8 bits.
             \item The minimum value is 0 (00000000) and the maximum value is 255 (11111111)
             \item In the above IP address the value of third octet is 258 which is out of the range 0-255. Therefore it is not a valid IP address.
             \end{itemize}
-2a) TCP is preferred for video streaming if the speed of transmission is important.
+\textbf{2a) TCP is preferred for video streaming if the speed of transmission is important.}
 			\begin{itemize}
 			\item False Statement
 			\item In video streaming if few packets are lost during transmission the devices using TCP protocol will then have to wait for the retransmission of those packets before receiving any new data. This is achieved by three-way handshake using SYN and ACK bits.
 			\item Therefore buffering of unacknowledged packets causes delay and speed of transmission becomes an issue.
 			\item Therefore TCP is not preffered for video streaming if the speed of transmission is important
 			\end{itemize}
-2b) TCP is a reliable and stateless protocol which splits application data into equal
+\textbf{2b) TCP is a reliable and stateless protocol which splits application data into equal}
 size of the packets.
 			\begin{itemize}
 			\item False Statement
@@ -208,7 +209,7 @@ size of the packets.
 			\item Because a connection is established between the host and receiver through three-way handshake before transmission of data. Adding to this both the host and the receiver maintain session information till the connection termination.
 			\item TCP is reliable as it ensures data deliveres in order not damaged and duplicated 
 			\end{itemize}
-2c)TCP controls the flow control of the networks having different speed of transmission 
+\textbf{2c)TCP controls the flow control of the networks having different speed of transmission} 
 			\begin{itemize}
 			\item True statement
 			\end{itemize}
