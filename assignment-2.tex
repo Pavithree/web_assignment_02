@@ -65,7 +65,7 @@ Calculate the \emph{checksum} of the hexadecimal message \texttt{ab35 c3d1 5231 
 Please write down every calculation step.
 
 \begin{figure}[h!]
-  \includegraphics[width=\linewidth]{resources\\Solution1.jpeg}
+  \includegraphics[width=\linewidth]{resources/Solution1.jpeg}
   \caption{CheckSum}
   \label{fig:checkSum}
 \end{figure}
@@ -76,7 +76,7 @@ Calculate the \emph{CRC} bits using the \emph{CRC} algorithm, as described in Ch
 Please write down every calculation step.
 
 \begin{figure}[h!]
-  \includegraphics[width=\linewidth]{resources\\Solution2.jpeg}
+  \includegraphics[width=\linewidth]{resources/Solution2.jpeg}
   \caption{Cyclic Redundancy Check}
   \label{fig:cyclicRedundancyCheck}
 \end{figure}
@@ -196,9 +196,9 @@ Along with your code, send the print screens of the terminals.
 2a) TCP is preferred for video streaming if the speed of transmission is important.
 			\begin{itemize}
 			\item False Statement
-			\item In vedio streaming if few packets are lost during transmission the devices using TCP protocol will then have to wait for the retransmission of those packets before receiving any new data. This is achieved by three-way handshake using SYN and ACK bits.
+			\item In video streaming if few packets are lost during transmission the devices using TCP protocol will then have to wait for the retransmission of those packets before receiving any new data. This is achieved by three-way handshake using SYN and ACK bits.
 			\item Therefore buffering of unacknowledged packets causes delay and speed of transmission becomes an issue.
-			\item Therefore TCP is not preffered for vedio streaming if the speed of transmission is important
+			\item Therefore TCP is not preffered for video streaming if the speed of transmission is important
 			\end{itemize}
 2b) TCP is a reliable and stateless protocol which splits application data into equal
 size of the packets.
@@ -218,6 +218,24 @@ size of the packets.
 
 \section{Tree way handshake \hfill{12 Points}}
 Explain with a few sentences the three steps of the process of a TCP three-way handshake.
+
+\subsection{Solution:}
+\begin{flushleft}
+Transmission Control Protocol(TCP) follows a connection oriented model, and with TCP data can be delivered successfully and accurately. Before TCP transmits data, it will use three-way handshake to establish a connection. Let’s see these three steps involved:
+\end{flushleft} 
+\begin{enumerate}
+    \item First step is client sends a \textbf{SYN} signal to the server asking for synchronisation, which basically means client wants to connect with the server.
+    \item In second step, server acknowledge the client by sending ACK, and server indicates that I want to get an established connection with client as well. That’s why we have \textbf{SYN + ACK}.
+    \item In third step, the client will reply with acknowledgement \textbf{ACK}, which means yes I am ready to have a connection with you.\\ 
+\end{enumerate}
+\begin{flushleft}
+    All these three steps confirms that there is a two way communication established between client and server. Now client can send a request to the server(for example, a web application hosted on server), the server will gonna respond to the client in form of a web page. That’s how the 3 way handshake happens with TCP. \bigbreak   REFERENCE: \href{https://en.wikipedia.org/wiki/Transmission_Control_Protocol}{https://en.wikipedia.org/wiki/Transmission-Control-Protocol}
+\end{flushleft} 
+\begin{figure}[h!]
+  \includegraphics[width=\linewidth]{resources/three-way-handshake.png}
+  \caption{Three-way Handshake}
+  \label{fig:three-way handshake}
+\end{figure}
 
 \section{DNS \hfill{13 Points}}
 For the DNS structure shown in Figure \ref{fig:dns} answer the following questions:

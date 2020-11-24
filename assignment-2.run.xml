@@ -41,18 +41,17 @@
   >
 ]>
 <requests version="1.0">
-  <internal package="biblatex" priority="9" active="1">
+  <internal package="biblatex" priority="9" active="0">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>assignment_template.bcf</file>
+      <file>assignment-2.bcf</file>
     </provides>
     <requires type="dynamic">
-      <file>assignment_template.bbl</file>
+      <file>assignment-2.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
       <file>blx-compat.def</file>
-      <file>blx-case-expl3.def</file>
       <file>biblatex.def</file>
       <file>standard.bbx</file>
       <file>authortitle.bbx</file>
@@ -62,23 +61,23 @@
       <file>english.lbx</file>
     </requires>
   </internal>
-  <external package="biblatex" priority="5" active="1">
+  <external package="biblatex" priority="5" active="0">
     <generic>biber</generic>
     <cmdline>
       <binary>biber</binary>
-      <infile>assignment_template</infile>
+      <infile>assignment-2</infile>
     </cmdline>
     <input>
-      <file>assignment_template.bcf</file>
+      <file>assignment-2.bcf</file>
     </input>
     <output>
-      <file>assignment_template.bbl</file>
+      <file>assignment-2.bbl</file>
     </output>
     <provides type="dynamic">
-      <file>assignment_template.bbl</file>
+      <file>assignment-2.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>assignment_template.bcf</file>
+      <file>assignment-2.bcf</file>
     </requires>
     <requires type="editable">
       <file>bibliography.bib</file>
